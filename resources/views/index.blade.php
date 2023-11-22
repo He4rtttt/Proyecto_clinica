@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Grupo2 - 3er ciclo DAI">
+  <meta name="description" content="Proyecto final DAI">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="HTML, Bootstrap, Vue, PHP, Laravel">
+  <!-- Titulo -->
+  <title>Clinica final</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/icono.svg">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- iconos bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Estilos propios -->
+  
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <header>
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/index/logo.png" class="logo" alt="">
+          </a>
+          <button class="navbar-toggler toggler-border-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list icon-navbar"></i>
+          </button>
+          <div class="collapse navbar-collapse align-content-end" id="navbarTogglerDemo02">
+            <!-- items del navbar-->
+            <ul class="navbar-nav me-10 mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Especialidades</a>
+              </li>
+              <li class="nav-item">
+              <a role="button" class="btn btn-pers btn-lg" href="{{ route('login1') }}">Iniciar sesión</a>
+              </li>
+              <li class="nav-item">
+                <a role="button" class="btn btn-pers green btn-lg" href="{{ route('register1') }}">Registrate</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+    </header>
+    <main>
+    <!-- Carrusel de imagenes -->
+    <section>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="sobreponer-carr texto-sobrepuesto">
+              <h2 class="">¡Descubre el Bienestar Total en Nuestra Clínica de Excelencia!</h2>
+              <p>Bienvenido a [Nombre de la Clínica], donde tu salud y bienestar son nuestra prioridad. Nuestro equipo de profesionales altamente calificados está comprometido a brindarte atención personalizada y de calidad.
+              </p>
+            </div>
+            <img src="img/index/carrusel/carr1.jpeg" class="d-block w-100 img-carr" alt="img1">
+          </div>
+          <div class="carousel-item">
+            <div class="sobreponer-carr texto-sobrepuesto">
+              <h2>¡No te pierdas la promocion!</h2>
+              <img src="img/index/promocion.png" class="img-z-carr" alt="">
+            </div>
+            <img src="img/index/carrusel/carr2.jpg" class="d-block w-100 img-carr" alt="img2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/index/carrusel/carr3.jpg" class="d-block w-100 img-carr" alt="img3">
+          </div>
+        </div>
+        <div class="sobreponer d-flex">
+          <a role="button" class="btn btn-pers cita m-2" href="login.html">Agendar cita</a>
+          <a role="button" class="btn btn-pers green video m-2" href="#">Como agendar</a>
+        </div>
+      </div>
+    </section>
+    <!-- Especialidades -->
+    <section class="bg-seccion">
+      <div class="container-fluid" style="height: 50px;">
+      </div>
+      <div class="container align-items-center">
+        <h1 class="text-center mb-3">Nuestras especilidades</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
+          <div class="col mb-4">
+            <a href="#">
+              <div class="card align-items-center">
+                <img src="img/index/especialidades_icon/heart-pulse.svg" class="card-img-top icon-especializacion" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cardiología</h5>
+                </div>
+              </div>
+            </a>
+              
+          </div>
+          <div class="col mb-4">
+            <div class="card align-items-center">
+              <img src="img/index/especialidades_icon/heart-pulse.svg" class="card-img-top icon-especializacion" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cardiología</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card align-items-center">
+              <img src="img/index/especialidades_icon/heart-pulse.svg" class="card-img-top icon-especializacion" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cardiología</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card align-items-center">
+              <img src="img/index/especialidades_icon/heart-pulse.svg" class="card-img-top icon-especializacion" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cardiología</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card align-items-center">
+              <img src="img/index/especialidades_icon/heart-pulse.svg" class="card-img-top icon-especializacion" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cardiología</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card align-items-center">
+              <img src="img/index/especialidades_icon/heart-pulse.svg" class="card-img-top icon-especializacion" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cardiología</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card align-items-center">
+              <img src="img/index/especialidades_icon/heart-pulse.svg" class="card-img-top icon-especializacion" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cardiología</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card align-items-center">
+              <img src="img/index/especialidades_icon/heart-pulse.svg" class="card-img-top icon-especializacion" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cardiología</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card align-items-center">
+              <img src="img/index/especialidades_icon/heart-pulse.svg" class="card-img-top icon-especializacion" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cardiología</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card align-items-center">
+              <img src="img/index/especialidades_icon/heart-pulse.svg" class="card-img-top icon-especializacion" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cardiología</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid" style="height: 50px;"></div>
+      </div>
+    </section>
+    <!-- Comentarios -->
+    <section>
+      <div class="container-fluid align-items-center parallax">
+        <div class="container-fluid" style="height: 50px;"></div>
+        <div class="container">
+          <h1 class="text-center mb-5 text-light">Comentarios de nuestros pacientes</h1>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+          <div class="col mb-4">
+            <div class="card align-items-center bg-user">
+              <img src="img/index/user.svg" class="card-img-top user-icon" alt="...">
+              <h5>Carlos Nuñez</h5>
+              <div class="card-body bg-light">
+                <p class="card-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore omnis eligendi dolorem aut rerum velit sit architecto impedit minima distinctio, atque est fugit, ex numquam, deserunt laboriosam maiores consequuntur!
+                  "</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card align-items-center bg-user">
+              <img src="img/index/user.svg" class="card-img-top user-icon" alt="...">
+              <h5>Carlos Nuñez</h5>
+              <div class="card-body bg-light">
+                <p class="card-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore omnis eligendi dolorem aut rerum velit sit architecto impedit minima distinctio, atque est fugit, ex numquam, deserunt laboriosam maiores consequuntur!
+                  "</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card align-items-center bg-user">
+              <img src="img/index/user.svg" class="card-img-top user-icon" alt="...">
+              <h5>Carlos Nuñez</h5>
+              <div class="card-body bg-light">
+                <p class="card-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore omnis eligendi dolorem aut rerum velit sit architecto impedit minima distinctio, atque est fugit, ex numquam, deserunt laboriosam maiores consequuntur!
+                  "</p>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid" style="height: 50px;"></div>
+        </div>
+      </div>
+    </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+    </footer>
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
